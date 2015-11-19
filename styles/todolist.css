@@ -17,3 +17,7 @@ th, td {
 .table>tbody>tr>td.text{
   padding-top: 20px;
 }
+
+.completed{
+  text-decoration: line-through;
+}

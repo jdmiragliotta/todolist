@@ -40,12 +40,12 @@ $(document).ready(function(){
   });
 
   $("table").on("click", ".btn-info", function(){
-    $(this).replaceWith("Completed!");
-    $(this).parent().prev().text().addClass("completed");
+    $(this).replaceWith($("<p>").addClass("completed").append("Nice! Completed!"));
+    $("p").parent().prev().css("text-decoration", "line-through");
   });
   
   $("#newTask").on("keydown", function(){
-    $(".alert-danger").fadeOut(1500);
+    $(".alert-danger").fadeOut(1000);
   });
 
 

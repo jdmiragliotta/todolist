@@ -20,8 +20,12 @@ th, td {
 
 .completed{
   padding-top: 12px;
-;
+}
 
-.strikethrough {
-  text-decoration: line-through;
+.completeTd {
+  width: 118px;
+}
+
+.deleteTd{
+  width: 103px;
 }

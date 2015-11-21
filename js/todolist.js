@@ -1,6 +1,12 @@
 $(document).ready(function(){
   $(".alert-danger").hide();
   
+  // Adds Autofocus to text field in bootstrap modal
+  $('.modal').on('shown.bs.modal', function () {
+    $(this).find('input:text:visible:first').focus();
+  })
+
+
   // Add UserName to List
   $(".btn-default").on("click", function(e){
     e.preventDefault();
@@ -11,7 +17,9 @@ $(document).ready(function(){
     taskTitle.append(userName+"\'s CoDo List!");
     $("th").append(taskTitle);
     $("#userName").val("").focus();
-    $(".btn-primary").fadeOut(3000);
+    $("#completelydo").fadeOut(1000);
+    $("#schedule").prop("disabled", false);
+
 
     
   });
@@ -36,7 +44,7 @@ $(document).ready(function(){
     
     var newRow = $("<tr>");    // ADD NEW TABLE ROW
     var taskTd = $("<td>").addClass("task-td text").append(newTask);       // ADD NEW TABLE DATA WITH CLASSES TO HOLD NEW TASK
-    var completedBtn = $("<button>").addClass("btn btn-info").append("I'm Finished!");       // ADD NEW BUTTON WITH CLASS AND TEXT
+    var completedBtn = $("<button>").addClass("btn btn-info").append("CompletelyDid It");       // ADD NEW BUTTON WITH CLASS AND TEXT
     var completedTd = $("<td>").addClass("completeTd").append(completedBtn);      // ADD BUTTON TO NEW TABLE DATA
     var deleteBtn = $("<button>").addClass("btn btn-danger").append("Delete It!"); // ADD NEW BUTTON WITH CLASS AND TEXT
     var deleteTd = $("<td>").addClass("deleteTd").append(deleteBtn);     // ADD BUTTON INTO NEW TABLE DATA
@@ -51,13 +59,13 @@ $(document).ready(function(){
   // Delete Button Removes Row
   $("table").on("click", ".btn-danger", function() {
     if($("tr").length > 1){
-      $(this).parent().parent().fadeOut(2000);
+      $(this).parent().parent().fadeOut(1000);
     }
   });
 
   // Removes Finish Button and Adds Strikethrough
   $("table").on("click", ".btn-info", function(){
-    $(this).replaceWith($("<p>").addClass("completed").append("Completed!"));
+    $(this).replaceWith($("<p>").addClass("completed").append("Completed It!"));
     $("p").parent().prev().css("text-decoration", "line-through");
   });
   

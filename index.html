@@ -22,8 +22,8 @@
     <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <div class="notepad">
-          <table class="table table-striped table-bordered table-hover">
+        <div class="">
+          <table class="table table-striped table-bordered">
             <tr>
             <th colspan="3"><h1></h1></th>
             </tr>
@@ -37,11 +37,11 @@
         </div>
       </div>
       <div class="col-md-4 col-md-offset-1">
-        <panel class="panel-default">
-          <phead>
+        <div class="panel-default">
+          <div class="panel-heading">
           <h1>What's Up Next?</h1>
-          </phead>
-          <pbody>
+          </div>
+          <div class="panel-body">
             <form>
               <input id="newTask" type = "text" placeholder= "Insert next ToDo Here" autocomplete="off">
               <button type="submit" class="add btn btn-success">Schedule It!</button>
@@ -49,7 +49,7 @@
             <div class="alert alert-danger" role="alert">
               You don't want to do that twice, do you?
             </div>
-          </pbody>
+          </div>
         </panel>
       </div>
     </div>

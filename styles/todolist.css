@@ -1,3 +1,32 @@
+
+/*-------------------------------
+    Nav CSS
+---------------------------------*/
+.navbar-default {
+  min-height: 100px;
+  border: none;
+  border-radius: 0;
+  background-image: url("../images/black_paper.png");
+}
+
+.navbar-brand{
+  padding-top: 40px;
+  font-size: 50px;
+}
+
+.form-group {
+  padding-top: 20px;
+}
+
+.btn-default{
+  margin-top: 20px;
+}
+
+
+/*-------------------------------
+   Panel CSS
+---------------------------------*/
+
 input {
   width: 100%;
   min-height: 2.5em;
@@ -9,6 +38,15 @@ input {
     width: 100%;
     margin-top: 10px;
 }
+
+.panel-default{
+  border: 1px solid #dfd7ca;
+  border-radius: 6px;
+}
+
+/*-------------------------------
+    Table CSS
+---------------------------------*/
 
 th, td {
   text-align: center;

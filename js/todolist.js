@@ -8,10 +8,12 @@ $(document).ready(function(){
     var userName = $("#userName").val();
     var taskTitle = $("<h1>");
     
-    taskTitle.append(userName+"\'s To Do List!");
+    taskTitle.append(userName+"\'s CoDo List!");
     $("th").append(taskTitle);
-
     $("#userName").val("").focus();
+    $(".btn-primary").fadeOut(3000);
+
+    
   });
 
   // Start of Adding Button 
@@ -49,7 +51,7 @@ $(document).ready(function(){
   // Delete Button Removes Row
   $("table").on("click", ".btn-danger", function() {
     if($("tr").length > 1){
-      $(this).parent().parent().remove();
+      $(this).parent().parent().fadeOut(2000);
     }
   });
 

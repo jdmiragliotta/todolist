@@ -22,11 +22,16 @@
   margin-top: 20px;
 }
 
+/*-------------------------------
+  Modal CSS
+---------------------------------*/
+#userName {
+  border: 1px solid black;
+}
 
 /*-------------------------------
    Panel CSS
 ---------------------------------*/
-
 input {
   width: 100%;
   min-height: 2.5em;
@@ -42,6 +47,10 @@ input {
 .panel-default{
   border: 1px solid #dfd7ca;
   border-radius: 6px;
+}
+
+.panel-heading>h1{
+  color: black;
 }
 
 /*-------------------------------

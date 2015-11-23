@@ -15,10 +15,11 @@
   <div class="container">
     <div class="well">
       <h1>Welcome To CoDo</h1>
-      <p>The place that helps you CompletelyDo everything on your list</p>
+      <p>The place that helps you <span class="title">CompletelyDo</span> everything on your list</p>
       <button id="completelydo" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
         CompletelyDo It!
       </button>
+
 
       <!-- Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -64,7 +65,7 @@
           </div>
           <div class="panel-body">
             <form>
-              <input id="newTask" type = "text" placeholder= "Insert next CoDo Here" autocomplete="off">
+              <input id="newTask" type = "text" placeholder= "Insert next CoDo Here" autocomplete="off" disabled="true">
               <button id="schedule" type="submit" class="add btn btn-success" disabled="true">Schedule It!</button>
             </form>
             <div class="alert alert-danger" role="alert">
@@ -77,6 +78,8 @@
   </div>
    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-  <script src="js/todolist.js" type="text/javascript"></script>
+  <script src="js/addTask.js" type="text/javascript"></script>
+  <script src="js/deleteTask.js" type="text/javascript"></script>
+  <script src="js/userName.js" type="text/javascript"></script>
 </body>
 </html>
